@@ -8,8 +8,8 @@
     /*===== Colors =====*/
     /*Purple 260 - Red 355 - Blue 224 - Pink 340*/
     /* HSL color mode */
-    --hue-color: 175.3;
-    --first-color: hsl(var(--hue-color), 90%, 40%);
+    --hue-color: 204;
+    --first-color: hsl(var(--hue-color), 75%, 68%);
     --second-color: hsl(var(--hue-color), 56%, 12%);
     /*===== Font typography =====*/
     --body-font: 'Poppins', sans-serif;
@@ -47,10 +47,10 @@ html {
 
 body {
     margin: var(--header-height) 0 0 0;
-    font-family: var(--body-font);
+    font-family: var(--body-font);  
     font-size: var(--normal-font-size);
-    color: #627AC9;
-    background-color: #D3ECD2;
+    color: #000000;
+    background-color: #FFF;
 }
 
 h1, h2, p {
@@ -114,8 +114,8 @@ img {
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
-    background-color: #fff;
-    box-shadow: 0 1px 4px rgba(146, 161, 176, 0.15);
+    background-color: #6AB1EC;
+    box-shadow: 0 1px 4px rgba(196, 208, 221, 0.15);
 }
 
 /*===== NAV =====*/
@@ -142,6 +142,7 @@ img {
 
 .nav__item {
     margin-bottom: var(--mb-4);
+    color: #FFF;
 }
 
 .nav__link {
@@ -151,6 +152,7 @@ img {
 
 .nav__link:hover {
     position: relative;
+    color: #FFF;
 }
 
 .nav__link:hover::after {
@@ -160,15 +162,15 @@ img {
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color: #FFF;
 }
 
 .nav__logo {
-    color: var(--second-color);
+    color: #FFF;
 }
 
 .nav__toggle {
-    color: var(--second-color);
+    color: var(--second-color);;
     font-size: 1.5rem;
     cursor: pointer;
 }
@@ -203,10 +205,12 @@ img {
 .home__title {
     font-size: var(--big-font-size);
     margin-bottom: var(--mb-5);
+    color: #6AB1EC;
 }
 
 .home__title-color {
-    color: var(--first-color);
+    font-size: var(--h2-font-size);
+    color: #6AB1EC;
 }
 
 .home__social {
@@ -264,6 +268,8 @@ img {
 
 .about__subtitle {
     margin-bottom: var(--mb-2);
+    text-align: center;
+    color: #6AB1EC;
 }
 
 .about__img {
@@ -278,12 +284,13 @@ img {
 
 /* ===== SKILLS =====*/
 .skills__container {
-    row-gap: 2rem;
     text-align: center;
 }
 
 .skills__subtitle {
     margin-bottom: var(--mb-2);
+    text-align: center;
+    color: var(--first-color);
 }
 
 .skills__text {
@@ -295,7 +302,6 @@ img {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    font-weight: var(--font-semi);
     padding: .5rem 1rem;
     margin-bottom: var(--mb-4);
     border-radius: .5rem;
@@ -311,6 +317,11 @@ img {
 .skills__names {
     display: flex;
     align-items: center;
+    font-weight: bold;
+}
+
+.skills__pub {
+    font-style: italic;
 }
 
 .skills__bar {
@@ -322,21 +333,35 @@ img {
     border-radius: .5rem;
     z-index: var(--z-back);
 }
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6AB1EC;
+}
+  
+.authors {
+    font-size: 1em;
+}
+  
+.affiliation {
+    font-size: 1em;
+    font-style: italic;
+}
 
 .skills__html {
-    width: 95%;
+    width: 100%;
 }
 
 .skills__css {
-    width: 85%;
+    width: 100%;
 }
 
 .skills__js {
-    width: 65%;
+    width: 100%;
 }
 
 .skills__ux {
-    width: 85%;
+    width: 100%;
 }
 
 .skills__img {
@@ -393,8 +418,8 @@ img {
 
 /* ===== FOOTER =====*/
 .footer {
-    background-color: var(--second-color);
-    color: #D3ECD2;
+    background-color: #6AB1EC;
+    color: #FFF;
     text-align: center;
     font-weight: var(--font-semi);
     padding: 2rem 0;
@@ -410,14 +435,14 @@ img {
 }
 
 .footer__icon {
-    font-size: 1.5rem;
-    color: #D3ECD2;
+    font-size: 1.8rem;
+    color: #FFF;
     margin: 0 var(--mb-2);
     transition: color .3s;
 }
 
 .footer__icon:hover {
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 .footer__copy {
@@ -454,13 +479,11 @@ img {
     }
     .about__container {
         grid-template-columns: repeat(2, 1fr);
-        align-items: center;
-        text-align: initial;
+        gap: 150px;
+        text-align: center;
     }
     .skills__container {
-        grid-template-columns: .7fr;
         justify-content: center;
-        column-gap: 1rem;
     }
     .work__container {
         grid-template-columns: repeat(2, 1fr);
@@ -506,7 +529,7 @@ img {
         display: none;
     }
     .nav__link {
-        color: var(--second-color);
+        color: #FFF;
     }
     .home {
         padding: 8rem 0 2rem;
@@ -522,8 +545,6 @@ img {
         width: 300px;
     }
     .skills__container {
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 2rem;
         align-items: center;
         text-align: initial;
     }
