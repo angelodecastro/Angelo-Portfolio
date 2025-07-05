@@ -24,44 +24,13 @@
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     
-    <!-- PWA Manifest -->
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#0ea5e9">
-    
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://cdn.jsdelivr.net">
     
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css?v=6">
-    <style>
-    /* FORCE ALL TEXT TO BE 100% OPAQUE */
-    * {
-        opacity: 1 !important;
-    }
-    body, p, h1, h2, h3, h4, h5, h6, a, span, div {
-        color: #000000 !important;
-        opacity: 1 !important;
-    }
-    .nav__link {
-        color: #000000 !important;
-        opacity: 1 !important;
-    }
-    .hero__text h1 {
-        color: #0284c7 !important;
-        opacity: 1 !important;
-    }
-    .hero__subtitle {
-        color: #0284c7 !important;
-        opacity: 1 !important;
-    }
-    /* FOOTER TEXT WHITE */
-    .footer__copyright, .footer__copyright p, .footer__copy {
-        color: #ffffff !important;
-        opacity: 1 !important;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
     
     <!-- Box Icons -->
     <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
@@ -88,7 +57,7 @@
                     <a href="#publications" class="nav__link" role="menuitem">Publications</a>
                 </li>
                 <li role="none">
-                    <a href="#contact" class="nav__link" role="menuitem">Curriculum Vitae</a>
+                    <a href="#contact" class="nav__link" role="menuitem">Contact</a>
                 </li>
             </ul>
             
@@ -130,7 +99,7 @@
                     </div>
                     
                     <div class="hero__image animate-fade-in">
-                        <img src="angeloabout.jpg" alt="Angelo De Castro" loading="eager">
+                        <img src="angeloabout.jpg" alt="Angelo De Castro - Professional headshot" loading="eager">
                     </div>
                 </div>
             </div>
@@ -191,10 +160,89 @@
             <div class="container">
                 <h2 class="section__title">Projects</h2>
                 
-                <div class="work__container">
-                    <a href="https://github.com/uf-aiaos/AnimalMotionViz" class="work__img" target="_blank">
-                        <img src="AnimalMotionViz.png" alt="AnimalMotionViz">
-                    </a>
+                <div class="projects__grid">
+                    <article class="project__card animate-fade-in-up">
+                        <div class="project__image">
+                            <img src="AnimalMotionViz.png" alt="AnimalMotionViz - Interactive software tool for tracking animal motion" loading="lazy">
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">AnimalMotionViz</h3>
+                            <p class="project__description">
+                                An interactive software tool for tracking and visualizing animal motion patterns using computer vision. 
+                                Features real-time analysis and comprehensive behavioral insights.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">Python</span>
+                                <span class="tech__tag">Computer Vision</span>
+                                <span class="tech__tag">Machine Learning</span>
+                                <span class="tech__tag">Data Visualization</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://github.com/uf-aiaos/AnimalMotionViz" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                    View Project
+                                </a>
+                                <a href="https://github.com/uf-aiaos/AnimalMotionViz" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class='bx bxl-github' aria-hidden="true"></i>
+                                    GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project__card animate-fade-in-up">
+                        <div class="project__image">
+                            <div style="background: linear-gradient(135deg, #0ea5e9, #0369a1); height: 100%; display: flex; align-items: center; justify-content: center;">
+                                <i class='bx bx-code-alt' style="font-size: 3rem; color: white;" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Space Object Detection</h3>
+                            <p class="project__description">
+                                Advanced deep learning system for localizing and classifying space objects using EfficientDet detector 
+                                for Space Situational Awareness applications.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">Deep Learning</span>
+                                <span class="tech__tag">EfficientDet</span>
+                                <span class="tech__tag">Computer Vision</span>
+                                <span class="tech__tag">Space Technology</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://doi.org/10.1038/s41598-022-25859-y" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                    View Paper
+                                </a>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="project__card animate-fade-in-up">
+                        <div class="project__image">
+                            <div style="background: linear-gradient(135deg, #10b981, #059669); height: 100%; display: flex; align-items: center; justify-content: center;">
+                                <i class='bx bx-leaf' style="font-size: 3rem; color: white;" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                        <div class="project__content">
+                            <h3 class="project__title">Wildlife Conservation AI</h3>
+                            <p class="project__description">
+                                YOLOv5n-based detection system for endangered mammals in Negros Island, Philippines, 
+                                supporting conservation efforts through automated monitoring.
+                            </p>
+                            <div class="project__tech">
+                                <span class="tech__tag">YOLOv5</span>
+                                <span class="tech__tag">Conservation</span>
+                                <span class="tech__tag">Wildlife Monitoring</span>
+                                <span class="tech__tag">AI Ethics</span>
+                            </div>
+                            <div class="project__links">
+                                <a href="https://doi.org/10.1007/978-981-19-8406-8_35" target="_blank" rel="noopener noreferrer" class="project__link">
+                                    <i class='bx bx-link-external' aria-hidden="true"></i>
+                                    View Paper
+                                </a>
+                            </div>
+                        </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -257,24 +305,36 @@
                     
                     <div class="publication__category">
                         <h3>Preprints</h3>
-                        <article class="publication__card">
-                            <!-- add preprints here next time -->
-                        </article>
+                        <p class="text-secondary text-center">More publications coming soon...</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Contact Section -->
-        <section class="section" id="contact" aria-label="Curriculum Vitae">
+        <section class="section" id="contact" aria-label="Contact information">
             <div class="container">
-                <h2 class="section__title">Curriculum Vitae</h2>
                 <div class="contact__content">
-                    <h2 class="home__title-color">Angelo De Castro</h2>
-                    <h3>PhD Student, University of Florida</h3>
+                    <h2 class="contact__title">Let's Connect</h2>
+                    <p class="contact__description">
+                        I'm always interested in discussing research opportunities, collaborations, or innovative projects 
+                        in AI and animal sciences. Feel free to reach out!
+                    </p>
                     
-                    <p>For further information or to view my Curriculum Vitae, please visit the following link:</p>
-                    <a href="https://angelodecastro.github.io/angelo_cv/CV_angelo.pdf" target="_blank">View CV</a>
+                    <div class="contact__actions">
+                        <a href="mailto:decastro.a@ufl.edu" class="btn btn-primary btn-lg" aria-label="Send email to Angelo">
+                            <i class='bx bx-envelope' aria-hidden="true"></i>
+                            Email Me
+                        </a>
+                        <a href="https://angelodecastro.github.io/angelo_cv/CV_angelo.pdf" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           class="btn btn-outline btn-lg"
+                           aria-label="Download Angelo's CV (PDF)">
+                            <i class='bx bx-download' aria-hidden="true"></i>
+                            Download CV
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

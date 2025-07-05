@@ -1,0 +1,25 @@
+{
+  "name": "Angelo De Castro - Portfolio",
+  "short_name": "Angelo Portfolio",
+  "description": "PhD Student in Animal Sciences at University of Florida, specializing in AI and computer vision for livestock farming.",
+  "start_url": "/index-modern.html",
+  "display": "standalone",
+  "background_color": "#fafafa",
+  "theme_color": "#0ea5e9",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["education", "academic", "research"],
+  "lang": "en",
+  "dir": "ltr"
+}
