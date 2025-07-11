@@ -469,7 +469,7 @@ a:hover {
 }
 
 .hero__image img {
-  width: 280px;
+  width: 350px;
   height: auto;
   object-fit: contain;
   border-radius: var(--radius-lg);
@@ -483,7 +483,7 @@ a:hover {
 
 @media (min-width: 48rem) {
   .hero__image img {
-    width: 360px;
+    width: 420px;
     height: auto;
   }
 }
