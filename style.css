@@ -660,7 +660,8 @@ a:hover {
   display: block;
   transition: all var(--transition-normal);
   max-width: 250px;
-  width: 100%;
+  width: 250px;
+  height: 290px;
   margin: 0 auto;
 }
 
@@ -671,11 +672,10 @@ a:hover {
 
 .work__img img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: contain;
   transition: transform var(--transition-slow);
-  max-width: 100%;
 }
 
 .work__img:hover img {
