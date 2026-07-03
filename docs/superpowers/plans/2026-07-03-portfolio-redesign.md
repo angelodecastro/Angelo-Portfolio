@@ -296,6 +296,11 @@ img { max-width: 100%; display: block; }
   box-shadow: var(--shadow-sm);
 }
 
+.card img {
+  border-radius: calc(var(--radius) - 4px);
+  margin-bottom: 16px;
+}
+
 .tag {
   display: inline-block;
   padding: 4px 12px;
@@ -945,6 +950,7 @@ git commit -m "Add research page with interests and focus-area cards"
       <h2>Software &amp; projects</h2>
       <div class="pub-group">
         <div class="card">
+          <img src="assets/images/animalmotionviz.png" alt="AnimalMotionViz interface screenshot" style="max-width: 240px;">
           <h3><a href="https://github.com/uf-aiaos/AnimalMotionViz" target="_blank" rel="noopener noreferrer">AnimalMotionViz</a></h3>
           <p>An interactive software tool for tracking and visualizing animal motion patterns using computer vision.</p>
         </div>
@@ -1011,11 +1017,11 @@ git commit -m "Add research page with interests and focus-area cards"
 
 Reload `http://localhost:8000/publications.html`.
 - `preview_snapshot`: confirm "Publications" is active in nav, the Software & Projects card
-  shows AnimalMotionViz, and all 3 pub groups (Journal, Conference, Preprint) show their tag,
-  title, authors, and venue link.
-- `preview_network` filtered to `failed`: confirm no broken links (this only checks resource
-  loads, not the external DOI/GitHub links themselves — those are outside our control to verify
-  here).
+  shows the AnimalMotionViz screenshot and title, and all 3 pub groups (Journal, Conference,
+  Preprint) show their tag, title, authors, and venue link.
+- `preview_network` filtered to `failed`: confirm the screenshot loads and there are no broken
+  local links (this only checks resource loads, not the external DOI/GitHub links themselves —
+  those are outside our control to verify here).
 
 Expected: all groups render, tags show the right color per type (visually check with
 `preview_inspect` on one `.tag--journal`, one `.tag--conference`, one `.tag--preprint` — each
