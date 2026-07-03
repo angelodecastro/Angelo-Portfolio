@@ -15,7 +15,10 @@
 ## Task 1: Local preview server
 
 **Files:**
-- Create: `.claude/launch.json`
+- Create: `../.claude/launch.json` (lives in `portfolio_and_CV/.claude/launch.json`, one level
+  above this repo — the preview tool resolves `launch.json` relative to the top-level working
+  directory, not the `Angelo-Portfolio` repo root, and `portfolio_and_CV` isn't a git repo, so
+  this file isn't tracked/committed anywhere)
 
 - [ ] **Step 1: Confirm you're on the `redesign-2026` branch, not `main`**
 
@@ -55,12 +58,10 @@ Use `mcp__Claude_Preview__preview_start` with `name: "portfolio-static"`, then
 Expected: the current (pre-redesign) homepage loads without a 404. This confirms the server is
 wired to the right directory before we start rebuilding pages on top of it.
 
-- [ ] **Step 4: Commit**
+- [ ] **Step 4: No commit for this step**
 
-```bash
-git add .claude/launch.json
-git commit -m "Add local preview server config for portfolio redesign"
-```
+`../.claude/launch.json` sits outside the `Angelo-Portfolio` git repo (in the untracked parent
+folder), so there's nothing to commit here — move on to Task 2.
 
 ---
 
