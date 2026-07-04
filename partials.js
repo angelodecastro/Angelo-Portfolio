@@ -124,10 +124,20 @@ function initNavToggle() {
   });
 }
 
+function buildSkipLink() {
+  const link = document.createElement('a');
+  link.href = '#main';
+  link.className = 'skip-link';
+  link.textContent = 'Skip to main content';
+  return link;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const activePage = document.body.dataset.page;
   const headerSlot = document.getElementById('site-header');
   const footerSlot = document.getElementById('site-footer');
+
+  document.body.insertBefore(buildSkipLink(), document.body.firstChild);
 
   if (headerSlot) headerSlot.appendChild(buildHeader(activePage));
   if (footerSlot) footerSlot.appendChild(buildFooter());
