@@ -30,14 +30,24 @@
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  font-size: 20px;
+  height: 100%;
+}
 
 body {
   font-family: var(--font-body);
   background: var(--bg-page);
   color: var(--text-primary);
   line-height: 1.6;
-  font-size: 16px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 h1, h2, h3, h4 {
@@ -191,6 +201,10 @@ img { max-width: 100%; display: block; }
   gap: 48px;
 }
 
+.hero__image {
+  flex-shrink: 0;
+}
+
 .hero__image img {
   width: 220px;
   height: 220px;
@@ -238,8 +252,8 @@ img { max-width: 100%; display: block; }
 .timeline-item:last-child { border-bottom: none; }
 
 .timeline-item__logo {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   object-fit: contain;
   flex-shrink: 0;
 }
@@ -249,6 +263,30 @@ img { max-width: 100%; display: block; }
   gap: 12px;
   align-items: center;
   flex-shrink: 0;
+}
+
+/* Research dissertation title */
+.dissertation-title {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--accent-dark);
+  border-left: 3px solid var(--accent);
+  padding: 4px 0 4px 20px;
+  margin-bottom: 24px;
+  max-width: 70ch;
+}
+
+.dissertation-title span {
+  display: block;
+  font-family: var(--font-body);
+  font-style: normal;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
 }
 
 /* Research focus cards */
