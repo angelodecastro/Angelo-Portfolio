@@ -63,7 +63,7 @@ function buildFooter() {
   cvRow.className = 'site-footer__cv';
 
   const cvLink = document.createElement('a');
-  cvLink.href = 'https://angelodecastro.github.io/angelo_cv/CV_angelo.pdf';
+  cvLink.href = 'https://angelodecastro.github.io/angelo_cv/CV_Angelo_updated.pdf';
   cvLink.target = '_blank';
   cvLink.rel = 'noopener noreferrer';
   cvLink.className = 'btn btn--accent';
