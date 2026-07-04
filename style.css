@@ -259,8 +259,8 @@ img { max-width: 100%; display: block; }
 }
 
 .timeline-item__logo--solo {
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
 }
 
 .timeline-item__logos {
@@ -292,8 +292,8 @@ img { max-width: 100%; display: block; }
 }
 
 .software-item__logo {
-  width: 56px;
-  height: 56px;
+  width: 76px;
+  height: 76px;
   object-fit: contain;
   flex-shrink: 0;
 }
