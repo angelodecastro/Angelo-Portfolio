@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://angelodecastro.github.io/Angelo-Portfolio/sitemap.xml
